@@ -7,10 +7,27 @@
   <meta name="description" content="A creative agency based somewhere over the rainbow.">
   <link rel="preload" href="https://cdn.shoelace.style/1.0.0-beta8/shoelace.css" as="style" crossorigin>
   <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta8/shoelace.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <title>Deep Down Agency</title>
+  <style>
+    :root {
+      --body-color: white;
+      --body-bg-color: linear-gradient(to bottom, var(--color-aqua), var(--color-navy));
+      --font-system: 'Karla', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    h6 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.1em; }
+    html,body { height: 100% }
+    .container { display: flex; flex-direction: column; height: 100%; }
+    .deep { margin-top: auto; } 
+    p { color: var(--color-aqua); }
+  </style>
 </head>
 <body>
-  <h1>We Are Deep Down</h1>
-  <p>And we'll be with you shortly...</p>
+  <section class="padding-big text-center container">
+    <div class="deep">
+      <h6>we are deep down</h6>
+      <p>We will be with you shortly...</p>
+    </div>
+  </section>
 </body>
 </html>
