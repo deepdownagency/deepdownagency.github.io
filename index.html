@@ -20,6 +20,7 @@
     .container { display: flex; flex-direction: column; height: 100%; }
     .deep { margin-top: auto; } 
     p { color: var(--color-aqua); }
+    #anim { width: 190px; height: 7em; margin: 0 auto; position: relative; -webkit-mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 1.0), transparent) }
   </style>
 </head>
 <body>
@@ -27,7 +28,19 @@
     <div class="deep">
       <h6>we are deep down</h6>
       <p>We will be with you shortly...</p>
+      <div id="anim"></div>
     </div>
   </section>
+  <script src="./bodymovin.js" type="text/javascript"></script>
+  <script>
+    bodymovin.loadAnimation({
+      container: document.getElementById('anim'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'data.json',
+      hideOnTransparent: true
+    });
+  </script>
 </body>
 </html>
